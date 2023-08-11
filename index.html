@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>tour of DOM</title>
+    <link rel="stylesheet" href="styles/dom.css">
+    <style>
+        li{
+            color: rgb(13, 37, 188);
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <h1>welcome to my DOM</h1>
+    </header>
+    <main>
+        <h1>my awesome DOM de baba</h1>
+        <ul>
+            <li>jalali set</li>
+            <li>shafayat</li>
+            <li>bonobash</li>
+            <li>sayed</li>
+        </ul>
+        <ul>
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>coconut</li>
+            <li>dav</li>
+        </ul>
+    </main>
+    <script src="js/dom.js"></script>
+    <script>
+        const liCollection=document.getElementsByTagName('li');
+        // console.log(liCollection);   
+        for(const li of liCollection){
+            console.log(li.innerText);
+        }
+
+        const headingsCollection=document.getElementsByTagName('h1');
+        for(const h1 of headingsCollection){
+            console.log(h1.innerText);
+        }
+    </script>
+</body>
+</html>
